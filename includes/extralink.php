@@ -1,0 +1,19 @@
+ <!-- End Custom CSS -->
+ <link
+      rel="icon"
+      href="wp-content/uploads/2021/02/android-icon-96x96-1-96x92.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="wp-content/uploads/2021/02/android-icon-96x96-1.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="wp-content/uploads/2021/02/android-icon-96x96-1.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://demo.bootstrap.news/default/wp-content/uploads/2021/02/android-icon-96x96-1.png"
+    />
