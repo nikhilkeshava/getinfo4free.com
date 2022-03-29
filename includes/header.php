@@ -212,7 +212,7 @@
                       id="demo"
                       ></a
                     >
-                    <script>const d = new Date();
+                    <script defer>const d = new Date();
                      document.getElementById("demo").innerHTML = d.toDateString();
                      </script>
                 </div>
@@ -225,7 +225,7 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home active menu-item-1011 nav-item"
                   >
                     <a
-                      title="Home"
+                      title="getinfo4free Home"
                       href="index.php"
                       class="nav-link"
                       >Home</a
@@ -239,7 +239,7 @@
                   >
                     <a
                       title="About Us"
-                      href="about-us/index.php"
+                      href="about-us.php"
                       class="nav-link"
                       >About Us</a
                     >
@@ -252,7 +252,7 @@
                   >
                     <a
                       title="Contact Us"
-                      href="contact-us/index.php"
+                      href="contact-us.php"
                       class="nav-link"
                       >Contact Us</a
                     >

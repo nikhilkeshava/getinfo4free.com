@@ -82,7 +82,7 @@ include('includes/config.php');
                         <div class="block-area">
                             <div class="block-title-6">
                                 <h4 class="h5 border-primary">
-                                    <span class="bg-primary text-white">Latest Post</span>
+                                    <span class="bg-primary text-white">Latest Gadgets and Product Reviews Post</span>
                                 </h4>
                             </div>
                             <!--output-->
@@ -110,7 +110,7 @@ if (isset($_GET['pageno'])) {
         $total_pages = ceil($total_rows / $no_of_records_per_page);
 
 
-$query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.PostImage,tblposts.postdes as postdes,tblposts.authorname as authorname,tblcategory.CategoryName as category,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.CategoryId='1' and tblposts.Is_Active=1 order by tblposts.id desc LIMIT $offset, $no_of_records_per_page");
+$query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.PostImage,tblposts.postdes as postdes,tblposts.authorname as authorname,tblcategory.CategoryName as category,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.CategoryId='3' and tblposts.Is_Active=1 order by RAND() LIMIT $offset, $no_of_records_per_page");
 
 $rowcount=mysqli_num_rows($query);
 if($rowcount==0)
@@ -152,7 +152,7 @@ while ($row=mysqli_fetch_array($query)) {
                                                                 height="16" fill="currentColor" class="bi bi-play-fill"
                                                                 viewBox="0 0 16 16">
                                                                 <path
-                                                                    d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                                                                    d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" ></svg>
 
                                                         </span>
                                                     </div>
@@ -170,7 +170,7 @@ while ($row=mysqli_fetch_array($query)) {
                                                 <div class="card-text mb-2 text-muted small">
                                                     <!--author-->
                                                     <span class="fw-bold d-none d-sm-inline me-1">
-                                                        <a href="author/aribudin/index.php" title="Posts by Ari Budin"
+                                                        <a href="#" title="Posts by <?php echo htmlentities($row['authorname']);?>"
                                                             rel="author"><?php echo htmlentities($row['authorname']);?></a>
                                                     </span>
                                                     <!--date-->
@@ -191,28 +191,16 @@ while ($row=mysqli_fetch_array($query)) {
                             </div>
                         </div>
                         <div class="clearfix my-4">
-                            <nav class="float-start" aria-label="Posts navigation">
-                                <ul class="pagination">
-                                    <li class="page-item active">
-                                        <span aria-current="page" class="page-link current">1</span>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="page/2/index.php">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="page/3/index.php">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <span class="page-link dots">&hellip;</span>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="page/6/index.php">6</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="next page-link" href="page/2/index.php">&raquo;</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                        <ul class="pagination justify-content-center mb-4">
+        <li class="page-item active"><a href="?pageno=1"  class="page-link">First</a></li>
+        <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?> page-item">
+            <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>" class="page-link">Prev</a>
+        </li>
+        <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?> page-item">
+            <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?> " class="page-link">Next</a>
+        </li>
+        <li class="page-item"><a href="?pageno=<?php echo $total_pages; ?>" class="page-link">Last</a></li>
+    </ul>
                             <span class="py-2 float-end"></span>
                         </div>
                         <?php } ?>
@@ -245,12 +233,12 @@ while ($row=mysqli_fetch_array($query)) {
                                                 $total_pages = ceil($total_rows / $no_of_records_per_page);
 
 
-                                        $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.viewCounter as viewcount,tblposts.PostImage,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1  order by tblposts.id desc  LIMIT $offset, $no_of_records_per_page");
+                                        $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.viewCounter as viewcount,tblposts.PostImage,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 order by RAND()  LIMIT $offset, $no_of_records_per_page");
                                         while ($row=mysqli_fetch_array($query)) {
                                         ?>
                                     <li class="hover-a">
                                         <a class="h5 h6-md h5-lg"
-                                            href="2019/06/family-leave-how-rich-nations-compare/index.php"><?php echo htmlentities($row['posttitle']);?></a>
+                                            href="<?php echo htmlentities($row['url']);?>"><?php echo htmlentities($row['posttitle']);?></a>
                                     </li>
                                     <?php } ?>
 

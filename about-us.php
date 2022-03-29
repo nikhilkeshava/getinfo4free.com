@@ -1,3 +1,8 @@
+<?php 
+session_start();
+include('includes/config.php');
+
+    ?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -6,30 +11,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <title>getinfo4free - Get all type of blogs like technical ,lifestyle, health and so on </title>
-    <meta name="description" content="getinfo4free is the blogs website where get all information like health and food , technical blogs , travel blogs so"/>
-    <link rel=" canonical" href="" />
+    <title>About US - getinfo4free blogs</title>
+    <meta name="description" content="About getinfo4free is the blogs website where get all information about health and food , technical blogs , travel blogs so"/>
+    <link rel=" canonical" href="https://www.getinfo4free.com/about-us.php" />
+    <meta name="keywords" content="About getinfo4free, About getinfo4free.com" />
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="About US - getinfo4free" />
+    <meta property="og:description" content="About getinfo4free is the blogs website where get all information about health and food , technical blogs , travel blogs so" />
+    <meta property="og:url" content="https://www.getinfo4free.com/about-us.php" />
+    <meta property="og:site_name" content="getinfo4free" />
     <meta name="twitter:card" content="summary_large_image" />
     <!-- extarlink -->
     <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
     <link rel="dns-prefetch" href="http://s.w.org/" />
 
-    <link rel="stylesheet" id="bootnews-styles-css" href="./css/bootstarp.css" media="all" />
-    <link rel="stylesheet" id="bootnews-styles-css" href="./css/style.css" media="all" />
+    <link rel="stylesheet"  href="./css/bootstarp.css" media="all" />
+    <link rel="stylesheet"  href="./css/style.css" media="all" />
 
     <meta name="generator" content="php" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- extra lunk -->
-    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-title" content="About US - getinfo4free blogs" />
 
     <!-- exttraklink -->
     <link rel="icon" href="./images/getinfo4free.png" sizes="32x32" />
@@ -52,10 +58,10 @@
     <!-- ========== WRAPPER ========== -->
     <div class="wrapper">
         <!--Header start-->
-        <?php include("./includes/header.php");?>
+         <?php include("./includes/header.php");?>
 
         <!-- main menu -->
-        <?php include("./includes/navbar.php");?>
+        <?php include("./includes/navbar.php");?> 
 
 
         <main id="content">
@@ -63,7 +69,7 @@
                 <div class="row">
                     <!--breadcrumb-->
                     <div class="col-12">
-                        <div class="breadcrumb u-breadcrumb  pt-3 px-0 mb-0 bg-transparent small"><a class="breadcrumb-item" href="https://demo.bootstrap.news/default">Bootstrap News Template</a>&nbsp;&nbsp;»&nbsp;&nbsp;About Us</div>
+                        <div class="breadcrumb u-breadcrumb  pt-3 px-0 mb-0 bg-transparent small"><a class="breadcrumb-item" href="#">Home</a>&nbsp;&nbsp;»&nbsp;&nbsp;About Us</div>
                     </div>
                     <!--end breadcrumb-->
                 </div>
@@ -85,8 +91,8 @@
 
                             <div class="entry-content post-content post-page">
 
-                                <figure id="attachment_1129" aria-describedby="caption-attachment-1129" style="width: 300px" class="wp-caption alignleft"><img loading="lazy" class="size-medium wp-image-1129" src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-1-300x200.jpg" alt="ferrari car" width="300" height="200" srcset="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-1-300x200.jpg 300w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-1-750x500.jpg 750w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-1-1024x683.jpg 1024w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-1.jpg 1140w" sizes="(max-width: 300px) 100vw, 300px">
-                                    <figcaption id="caption-attachment-1129" class="wp-caption-text">ferrari car</figcaption>
+                                <figure id="attachment_1129" aria-describedby="caption-attachment-1129" style="width: 300px" class="wp-caption alignleft"><img loading="lazy" class="size-medium wp-image-1129" src="./images/getinfo4free.png" alt="About getinfo4free" width="300" height="200" srcset="./images/getinfo4free.png 300w, ./images/getinfo4free.png 750w, ./images/getinfo4free.png 1024w, ./images/getinfo4free.png 1140w" sizes="(max-width: 300px) 100vw, 300px">
+                                    <figcaption id="caption-attachment-1129" class="wp-caption-text">About Getinfo4free</figcaption>
                                 </figure>
                                 <p>We are a solid company and always prioritize consumer convenience. We have a great mission to continue to innovate and develop in everything. If you are looking for a solid company, we are the answer you are looking for. We were established since 2019 and have served many domestic and foreign consumers.</p>
                                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>

@@ -1,3 +1,8 @@
+<?php 
+session_start();
+include('includes/config.php');
+
+    ?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -6,30 +11,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <title>getinfo4free - Get all type of blogs like technical ,lifestyle, health and so on </title>
-    <meta name="description" content="getinfo4free is the blogs website where get all information like health and food , technical blogs , travel blogs so"/>
-    <link rel=" canonical" href="" />
-
+    <title>getinfo4free - Privacy Policy </title>
+    <meta name="description" content="Privacy Policy of getinfo4free where getinfo4free is the blogs website where get all information" />
+    <link rel=" canonical" href="https://www.getinfo4free.com/Privacy-Policy.php" />
+    <meta name="keywords" content="getinfo4free Privacy Policy, technical blogs , top blog website , getinfo4free.com" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="getinfo4free - privacy Policy " />
+    <meta property="og:description" content="Privacy Policy of getinfo4free where getinfo4free is the blogs website where get all information" />
+    <meta property="og:url" content="https://www.getinfo4free.com/Privacy-Policy.php" />
+    <meta property="og:site_name" content="getinfo4free" />
     <meta name="twitter:card" content="summary_large_image" />
     <!-- extarlink -->
     <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
     <link rel="dns-prefetch" href="http://s.w.org/" />
 
-    <link rel="stylesheet" id="bootnews-styles-css" href="./css/bootstarp.css" media="all" />
-    <link rel="stylesheet" id="bootnews-styles-css" href="./css/style.css" media="all" />
+    <link rel="stylesheet" href="./css/bootstarp.css" media="all" />
+    <link rel="stylesheet" href="./css/style.css" media="all" />
 
     <meta name="generator" content="php" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- extra lunk -->
-    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-title" content="getinfo4free - Privacy Policy " />
 
     <!-- exttraklink -->
     <link rel="icon" href="./images/getinfo4free.png" sizes="32x32" />
@@ -59,385 +64,141 @@
 
 
         <main id="content">
-	<div class="container">
-		<div class="row">
-			<!--breadcrumb-->
-			<div class="col-12">
-				<div class="breadcrumb u-breadcrumb  pt-3 px-0 mb-0 bg-transparent small"><a class="breadcrumb-item" href="https://demo.bootstrap.news/default">Bootstrap News Template</a>&nbsp;&nbsp;»&nbsp;&nbsp;Privacy Policy</div>			</div>
-		</div>
-			
-		<div class="row">
-            <!-- main content -->
-			<div class="col-md-8">
-				    
-    			
-<article class="post-1733 page type-page status-publish hentry" id="post-1733">
+            <div class="container">
+                <div class="row">
+                    <!--breadcrumb-->
+                    <div class="col-12">
+                        <div class="breadcrumb u-breadcrumb  pt-3 px-0 mb-0 bg-transparent small"><a class="breadcrumb-item" href="https://www.getinfo4free.com">Getinfo4free</a>&nbsp;&nbsp;»&nbsp;&nbsp;Privacy Policy</div>
+                    </div>
+                </div>
 
-	<header class="entry-header post-title">
+                <div class="row">
+                    <!-- main content -->
+                    <div class="col-md-8">
 
-		<h1 class="entry-title h1 display-4-md display-3-lg mt-2">Privacy Policy</h1>
-	</header><!-- .entry-header -->
 
-	
-	<div class="entry-content post-content post-page">
+                        <article class="post-1733 page type-page status-publish hentry" id="post-1733">
 
-		
-<h2>Who we are</h2>
+                            <header class="entry-header post-title">
 
+                                <h1 class="entry-title h1 display-4-md display-3-lg mt-2">Privacy Policy</h1>
+                            </header><!-- .entry-header -->
 
 
-<p>Our website address is: https://yourdomain.com</p>
+                            <div class="entry-content post-content post-page">
 
 
+                                <h2>Who we are</h2>
 
-<h2>What personal data we collect and why we collect it</h2>
 
 
+                                <p>Our website address is: https://www.getinfo4free.com</p>
 
-<h3>Comments</h3>
+                                <p>This privacy policy has been compiled to better serve those who are concerned with how their' Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context.</p>
 
+                                <h2>What personal data we collect and why we collect it</h2>
+                                <p>Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.What personal information do we collect from the people that visit our blog, website or app?When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address or other details to help you with your experience.
 
+                                </p>
 
-<p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.</p>
 
+                                <h3>When Do We Collect Information?</h3>
 
 
-<p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>
 
+                                <p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.</p>
 
 
-<h3>Media</h3>
 
 
+                                <h3>Cookies</h3>
 
-<p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>
 
 
+                                <p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>
 
-<h3>Contact forms</h3>
 
 
+                                <p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>
 
-<h3>Cookies</h3>
 
 
+                                <p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
 
-<p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>
+                                <h3>Embedded content from other websites</h3>
 
 
 
-<p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>
+                                <p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>
 
 
 
-<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
+                                <p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>
 
+                                <h3>When Do We Collect Notes?</h3>
+                                <p>We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways: <br>
 
+                                    1.To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested. <br>
 
-<p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>
+                                    2.To improve our website in order to better serve you. <br>
 
+                                    3.To follow up with them after correspondence (live chat, email or phone inquiries)</p>
 
+                                <h3>How Do We Protect Your Information?</h3>
 
-<h3>Embedded content from other websites</h3>
+                                <p>We don't utilise vulnerability scanning or PCI compliance scanning. We solely provide information and articles. We never request credit card information. Malware scanning is not used by us. We don't have an SSL certificate installed.</p>
+                                <p>
 
+                                    We solely provide information and articles. Names, email addresses, and payment card numbers are never requested as personal or private information.</p>
 
+                                <h3>Third-Party Disclosure</h3>
+                                <p>We do not sell, trade, or otherwise transmit your Personally Identifiable Information to third parties.</p>
+                                <h3>Third-Party Links</h3>
+                                <p>On occasion, we may include or offer third-party products or services on our website at our discretion. These third-party websites have their own set of privacy policies. As a result, we disclaim all responsibility or liability for the content or actions of these third-party websites. Nonetheless, we are committed to maintaining the integrity of our website and welcome any criticism regarding these sites.</p>
 
-<p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>
+                                <h3>Google advertising</h3>
+                                <p>The Google Advertising Principles summarise Google's advertising requirements. They're in place to make sure that users have a good time. https://support.google.com/adwordspolicy/answer/1316548?hl=en On our website, we use Google AdSense advertising.</p>
+                                <p>
+                                    Cookies are used by Google, a third-party provider, to deliver adverts on our site. The DART cookie allows Google to deliver ads to our visitors based on their prior visits to our site and other websites on the Internet. By visiting the Google Ad and Content Network privacy policy, users can opt out of the use of the DART cookie.</p>
+                                <h3>We Have Implemented The Following:</h3>
+                                <p>We utilise first-party cookies (like the Google Analytics cookies) and third-party cookies (like the DoubleClick cookie) or other third-party identifiers together with third-party partners like Google. Advertisements should be published.</p>
+                                <h3>Opting Out</h3>
+                                <p>The Google Ad Settings website allows users to customise how Google advertises to them. You can also use the Google Analytics Opt Out Browser add-on or visit the Network Advertising Initiative Opt Out page to opt out.</p>
 
+                                <h3>Contact to Getinfo4free</h3>
+                                <p>If there are any questions regarding this privacy policy, you may contact us using the information below.
+                                    <br>
+                                    https://www.getinfo4free.com <br>
+                                    Sindhuvalli main road , sindhuvalli , Mysore <br>
+                                    Mysore, Karnataka 571311 India <br>
+                                    support@getinfo4free.com
+                                </p>
+                            </div><!-- .entry-content -->
 
+                            <footer class="entry-footer">
 
-<p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>
 
+                            </footer><!-- .entry-footer -->
 
+                        </article><!-- #post-## -->
 
-<h3>Analytics</h3>
+                    </div>
+                    <!-- left sidebar check -->
 
+                    <!-- right sidebar check -->
 
 
-<h2>Who we share your data with</h2>
+                    <aside class="col-md-4 widget-area end-sidebar-lg" id="right-sidebar" style="position: relative;">
 
-
-
-<h2>How long we retain your data</h2>
-
-
-
-<p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>
-
-
-
-<p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>
-
-
-
-<h2>What rights you have over your data</h2>
-
-
-
-<p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>
-
-
-
-<h2>Where we send your data</h2>
-
-
-
-<p>Visitor comments may be checked through an automated spam detection service.</p>
-
-
-
-<h2>Your contact information</h2>
-
-
-
-<h2>Additional information</h2>
-
-
-
-<h3>How we protect your data</h3>
-
-
-
-<h3>What data breach procedures we have in place</h3>
-
-
-
-<h3>What third parties we receive data from</h3>
-
-
-
-<h3>What automated decision making and/or profiling we do with user data</h3>
-
-
-
-<h3>Industry regulatory disclosure requirements</h3>
-
-		
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->    
-    			    
-        					</div>
-			<!-- left sidebar check -->
-						
-			<!-- right sidebar check -->
-			
-
-	<aside class="col-md-4 widget-area end-sidebar-lg" id="right-sidebar" style="position: relative;">
-    
-        <div class="" style="position: static; left: auto; width: 281px;">
-            <aside id="bootnews_social-4" class="widget widget_categories widget_categories_custom"><div class="block-title-4"><h4 class="h5 title-arrow"><span>Social Network</span></h4></div>					<ul class="list-unstyled social-two">
-									<li class="facebook"><a class="bg-facebook text-white" rel="noopener" href="https://facebook.com" target="_blank" title="Facebook">Facebook</a></li>
-				
-									<li class="twitter"><a class="bg-twitter text-white" rel="noopener" href="https://twitter.com" target="_blank" title="Twitter">Twitter</a></li>
-				
-									<li class="instagram"><a class="bg-instagram text-white" rel="noopener" href="https://instagram.com" target="_blank" title="Instagram">Instagram</a></li>
-				
-									<li class="youtube"><a class="bg-youtube text-white" rel="noopener" href="https://youtube.com" target="_blank" title="Youtube">Youtube</a></li>
-				
-									<li class="linkedin"><a class="bg-linkedin text-white" rel="noopener" href="https://linkedin.com" target="_blank" title="Linkedin">Linkedin</a></li>
-				
-									<li class="vimeo"><a class="bg-vimeo text-white" rel="noopener" href="https://vimeo.com" target="_blank" title="Vimeo">Vimeo</a></li>
-				
-									<li class="pinterest"><a class="bg-pinterest text-white" rel="noopener" href="https://pinterest.com" target="_blank" title="Pinterest">Pinterest</a></li>
-				
-									<li class="telegram"><a class="bg-telegram text-white" rel="noopener" href="https://telegram.com" target="_blank" title="Telegram">Telegram</a></li>
-								
-							</ul>
-			<div class="gap-1"></div>
-				<!-- end social content -->
-		</aside><aside id="bootnews_custompost-10" class="widget widget_categories widget_categories_custom"><div class="block-title-4"><h4 class="h5 title-arrow"><span>Football News</span></h4></div>		
-				<!--style 3-->
-						<div id="timeline-post">
-			<ul class="timeline-post">
-			    				<li>
-					<a href="https://demo.bootstrap.news/default/2019/06/kilmarnock-miss-chance-to-close-on-celtic-as-they-lose-at-home/">
-						<span class="timeline-date small"><time class="news-date" datetime="2019-06-14T06:58:44+00:00">June 14, 2019</time></span> 
-						<h4 class="h6 timeline-title">Kilmarnock miss chance to close on Celtic as they lose at home</h4>
-					</a>
-				</li>
-								<li>
-					<a href="https://demo.bootstrap.news/default/2019/06/qatar-beat-japan-to-win-first-asian-cup-highlights-report/">
-						<span class="timeline-date small"><time class="news-date" datetime="2019-06-14T06:14:22+00:00">June 14, 2019</time></span> 
-						<h4 class="h6 timeline-title">Qatar beat Japan to win first Asian Cup – highlights &amp; report</h4>
-					</a>
-				</li>
-								<li>
-					<a href="https://demo.bootstrap.news/default/2019/06/fans-celebrate-in-paris-after-side-reaches-world-cup-final/">
-						<span class="timeline-date small"><time class="news-date" datetime="2019-06-14T06:12:10+00:00">June 14, 2019</time></span> 
-						<h4 class="h6 timeline-title">Fans celebrate in Paris after side reaches World Cup final</h4>
-					</a>
-				</li>
-								<li>
-					<a href="https://demo.bootstrap.news/default/2019/06/football-daily-podcast-crouch-batshuayi-and-tielemans/">
-						<span class="timeline-date small"><time class="news-date" datetime="2019-06-14T06:05:47+00:00">June 14, 2019</time></span> 
-						<h4 class="h6 timeline-title">Football Daily podcast: Crouch, Batshuayi and Tielemans</h4>
-					</a>
-				</li>
-								<li>
-					<a href="https://demo.bootstrap.news/default/2019/06/back-from-the-dead-parma-embraces-a-football-school-arena/">
-						<span class="timeline-date small"><time class="news-date" datetime="2019-06-13T08:35:42+00:00">June 13, 2019</time></span> 
-						<h4 class="h6 timeline-title">Back From the Dead, Parma Embraces a Football School arena</h4>
-					</a>
-				</li>
-											</ul>
-			<div class="gap-05"></div>
-		</div>
-						</aside><aside id="bootnews_latestside-4" class="widget widget_categories widget_categories_custom"><div class="block-title-4"><h4 class="h5 title-arrow"><span>Latest Post</span></h4></div>		<!--output-->
-							<div class="big-post">
-									<article class="card card-full hover-a mb-4">
-													<!--thumbnail-->
-							<div class="ratio_360-202 image-wrapper">
-								<a href="https://demo.bootstrap.news/default/2019/06/the-man-who-saved-millions-from-starvation/">
-									<img width="360" height="202" src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x202.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="The man who saved millions from starvation" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x202.jpg" srcset="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x202.jpg 360w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-372x208.jpg 372w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-251x141.jpg 251w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-230x129.jpg 230w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-203x114.jpg 203w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-165x92.jpg 165w" sizes="(max-width: 360px) 100vw, 360px" data-ll-status="loaded">								    <!-- post type -->
-                        			<div class="post-type-icon">
-    <span class="fa-stack-sea text-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-            <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
-        </svg>
-    </span>
-</div>
-								</a>
-							</div>
-												
-						<div class="card-body">
-							<!--title-->
-							<h2 class="card-title h1-sm h3-md">
-								<a href="https://demo.bootstrap.news/default/2019/06/the-man-who-saved-millions-from-starvation/">The man who saved millions from starvation</a>
-							</h2>
-							<div class="card-text text-muted small mb-2">
-							    								<!--author-->
-								<span class="d-none d-sm-inline fw-bold me-1">
-									<a href="https://demo.bootstrap.news/default/author/aribudin/" title="Posts by Ari Budin" rel="author">Ari Budin</a> 
-								</span>
-																<!--date-->
-								<time class="news-date" datetime="2019-06-16T14:10:06+00:00">June 16, 2019</time>
-							</div>
-							<!--description-->
-							<p class="card-text">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a...</p>
-						</div>
-					</article>
-											</div>
-				
-							<div class="small-post">
-									<!--post list-->
-					<article class="card card-full hover-a mb-4">
-						<div class="row">
-							<div class="col-3 col-md-4 pe-2 pe-md-0">
-																	<!--thumbnail-->
-									<div class="ratio_110-77 image-wrapper">
-										<a href="https://demo.bootstrap.news/default/2019/06/scotlands-crannogs-older-than-stonehenge/">
-											<img width="110" height="77" src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1913326-110x77.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="Scotland’s crannogs older than Stonehenge" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1913326-110x77.jpg" srcset="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1913326-110x77.jpg 110w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1913326-99x68.jpg 99w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1913326-115x80.jpg 115w" sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">    										<!-- post type -->
-                                			<div class="post-type-icon">
-    <span class="fa-stack-sea text-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
-          <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
-          <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"></path>
-        </svg>
-    </span>
-</div>
-										</a>
-									</div>
-															</div>
-							
-							<div class="col-9 col-md-8">
-								<div class="card-body pt-0">
-									<!--title-->
-									<h3 class="card-title h6 h5-sm h6-md">
-										<a href="https://demo.bootstrap.news/default/2019/06/scotlands-crannogs-older-than-stonehenge/">Scotland’s crannogs older than Stonehenge</a>
-									</h3>
-									<!--date-->
-									<div class="card-text small text-muted">
-										<time class="news-date" datetime="2019-06-16T14:09:46+00:00">June 16, 2019</time>
-									</div>
-								</div>
-							</div>
-						</div>
-					</article>
-					<!--End post list-->
-									<!--post list-->
-					<article class="card card-full hover-a mb-4">
-						<div class="row">
-							<div class="col-3 col-md-4 pe-2 pe-md-0">
-																	<!--thumbnail-->
-									<div class="ratio_110-77 image-wrapper">
-										<a href="https://demo.bootstrap.news/default/2019/06/greenland-map-captures-arctic-in-fine-detail/">
-											<img width="110" height="77" src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-123335-110x77.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="Greenland map captures Arctic in fine detail" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-123335-110x77.jpg" srcset="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-123335-110x77.jpg 110w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-123335-99x68.jpg 99w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-123335-115x80.jpg 115w" sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">    										<!-- post type -->
-                                			<div class="post-type-icon">
-    <span class="fa-stack-sea text-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-quote" viewBox="0 0 16 16">
-          <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path>
-          <path d="M7.066 6.76A1.665 1.665 0 0 0 4 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"></path>
-        </svg>
-    </span>
-</div>
-										</a>
-									</div>
-															</div>
-							
-							<div class="col-9 col-md-8">
-								<div class="card-body pt-0">
-									<!--title-->
-									<h3 class="card-title h6 h5-sm h6-md">
-										<a href="https://demo.bootstrap.news/default/2019/06/greenland-map-captures-arctic-in-fine-detail/">Greenland map captures Arctic in fine detail</a>
-									</h3>
-									<!--date-->
-									<div class="card-text small text-muted">
-										<time class="news-date" datetime="2019-06-16T14:09:14+00:00">June 16, 2019</time>
-									</div>
-								</div>
-							</div>
-						</div>
-					</article>
-					<!--End post list-->
-									<!--post list-->
-					<article class="card card-full hover-a mb-4">
-						<div class="row">
-							<div class="col-3 col-md-4 pe-2 pe-md-0">
-																	<!--thumbnail-->
-									<div class="ratio_110-77 image-wrapper">
-										<a href="https://demo.bootstrap.news/default/2019/06/the-snail-that-came-back-from-the-dead/">
-											<img width="110" height="77" src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-572056-110x77.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="The snail that ‘came back from the dead’" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-572056-110x77.jpg" srcset="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-572056-110x77.jpg 110w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-572056-99x68.jpg 99w, https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-572056-115x80.jpg 115w" sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">    										<!-- post type -->
-                                			<div class="post-type-icon">
-    <span class="fa-stack-sea text-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-          <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
-          <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"></path>
-        </svg>
-    </span>
-</div>
-										</a>
-									</div>
-															</div>
-							
-							<div class="col-9 col-md-8">
-								<div class="card-body pt-0">
-									<!--title-->
-									<h3 class="card-title h6 h5-sm h6-md">
-										<a href="https://demo.bootstrap.news/default/2019/06/the-snail-that-came-back-from-the-dead/">The snail that ‘came back from the dead’</a>
-									</h3>
-									<!--date-->
-									<div class="card-text small text-muted">
-										<time class="news-date" datetime="2019-06-16T14:08:06+00:00">June 16, 2019</time>
-									</div>
-								</div>
-							</div>
-						</div>
-					</article>
-					<!--End post list-->
-											</div>
-			<div class="gap-0"></div>
-				</aside>        
-    </div>
-    </aside>	
-		</div>
-	</div>
-</main>
+                        <div class="" style="position: static; left: auto; width: 281px;">
+						<?php include("./supportpage/socialmedia.php");?>
+                            <?php include("./supportpage/people-liked.php");?>
+                            <?php include("./supportpage/latest-post.php");?>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
 
         <!--Footer start-->
         <?php include("./includes/footer.php")?>

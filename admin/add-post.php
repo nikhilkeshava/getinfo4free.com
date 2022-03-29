@@ -12,6 +12,12 @@ else{
 if(isset($_POST['submit']))
 {
 $posttitle=$_POST['posttitle'];
+$postdes=$_POST['postdes'];
+$postkeywords=$_POST['postkeywords'];
+$authorname=$_POST['postauthor'];
+$authordes=$_POST['postauthordes'];
+$cattags=$_POST['posttags'];
+$hashtags=$_POST['posthashtags'];
 $catid=$_POST['category'];
 $subcatid=$_POST['subcategory'];
 $postdetails=$_POST['postdescription'];
@@ -22,290 +28,303 @@ $imgfile=$_FILES["postimage"]["name"];
 // get the image extension
 $extension = substr($imgfile,strlen($imgfile)-4,strlen($imgfile));
 // allowed extensions
-$allowed_extensions = array(".jpg","jpeg",".png",".gif");
 // Validation for allowed extensions .in_array() function searches an array for a specific value.
-if(!in_array($extension,$allowed_extensions))
-{
-echo "<script>alert('Invalid format. Only jpg / jpeg/ png /gif format allowed');</script>";
-}
-else
-{
+
 //rename the image file
-$imgnewfile=md5($imgfile).$extension;
+$imgnewfile=($imgfile).$extension;
 // Code for move image into directory
 move_uploaded_file($_FILES["postimage"]["tmp_name"],"postimages/".$imgnewfile);
 
 $status=1;
-$query=mysqli_query($con,"insert into tblposts(PostTitle,CategoryId,SubCategoryId,PostDetails,PostUrl,Is_Active,PostImage,postedBy) values('$posttitle','$catid','$subcatid','$postdetails','$url','$status','$imgnewfile','$postedby')");
+$query=mysqli_query($con,"insert into tblposts(PostTitle,postdes,postkeywords,authorname,authordes,cattags,hashtags,CategoryId,SubCategoryId,PostDetails,PostUrl,Is_Active,PostImage,postedBy) values('$posttitle','$postdes','$postkeywords','$authorname','$authordes','$cattags','$hashtags','$catid','$subcatid','$postdetails','$url','$status','$imgnewfile','$postedby')");
 if($query)
 {
 $msg="Post successfully added ";
 }
 else{
 $error="Something went wrong . Please try again.";    
-} 
-
 }
+
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
-        <meta name="author" content="Coderthemes">
 
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <!-- App title -->
-        <title>Newsportal | Add Post</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
 
-        <!-- Summernote css -->
-        <link href="../plugins/summernote/summernote.css" rel="stylesheet" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- App title -->
+    <title>Getinfo4free | Add Post</title>
 
-        <!-- Select2 -->
-        <link href="../plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <!-- Summernote css -->
+    <link href="../plugins/summernote/summernote.css" rel="stylesheet" />
 
-        <!-- Jquery filer css -->
-        <link href="../plugins/jquery.filer/css/jquery.filer.css" rel="stylesheet" />
-        <link href="../plugins/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css" rel="stylesheet" />
+    <!-- Select2 -->
+    <link href="../plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
 
-        <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
-        <script src="assets/js/modernizr.min.js"></script>
-        <link href='https://cdn.jsdelivr.net/npm/froala-editor@4.0.8/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+    <!-- Jquery filer css -->
+    <link href="../plugins/jquery.filer/css/jquery.filer.css" rel="stylesheet" />
+    <link href="../plugins/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css" rel="stylesheet" />
 
-<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@4.0.8/js/froala_editor.pkgd.min.js'></script>
- <script>
-function getSubCat(val) {
-  $.ajax({
-  type: "POST",
-  url: "get_subcategory.php",
-  data:'catid='+val,
-  success: function(data){
-    $("#subcategory").html(data);
-  }
-  });
-  }
-  </script>
-    </head>
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
+    <script src="assets/js/modernizr.min.js"></script>
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@4.0.8/css/froala_editor.pkgd.min.css' rel='stylesheet'
+        type='text/css' />
 
-
-    <body class="fixed-left">
-
-        <!-- Begin page -->
-        <div id="wrapper">
-
-            <!-- Top Bar Start -->
-           <?php include('includes/topheader.php');?>
-            <!-- ========== Left Sidebar Start ========== -->
-             <?php include('includes/leftsidebar.php');?>
-            <!-- Left Sidebar End -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@4.0.8/js/froala_editor.pkgd.min.js'>
+    </script>
+    <script>
+        function getSubCat(val) {
+            $.ajax({
+                type: "POST",
+                url: "get_subcategory.php",
+                data: 'catid=' + val,
+                success: function (data) {
+                    $("#subcategory").html(data);
+                }
+            });
+        }
+    </script>
+</head>
 
 
+<body class="fixed-left">
 
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="content-page">
-                <!-- Start content -->
-                <div class="content">
-                    <div class="container">
+    <!-- Begin page -->
+    <div id="wrapper">
 
-
-                        <div class="row">
-							<div class="col-xs-12">
-								<div class="page-title-box">
-                                    <h4 class="page-title">Add Post </h4>
-                                    <ol class="breadcrumb p-0 m-0">
-                                        <li>
-                                            <a href="#">Post</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Add Post </a>
-                                        </li>
-                                        <li class="active">
-                                            Add Post
-                                        </li>
-                                    </ol>
-                                    <div class="clearfix"></div>
-                                </div>
-							</div>
-						</div>
-                        <!-- end row -->
-
-<div class="row">
-<div class="col-sm-6">  
-<!---Success Message--->  
-<?php if($msg){ ?>
-<div class="alert alert-success" role="alert">
-<strong>Well done!</strong> <?php echo htmlentities($msg);?>
-</div>
-<?php } ?>
-
-<!---Error Message--->
-<?php if($error){ ?>
-<div class="alert alert-danger" role="alert">
-<strong>Oh snap!</strong> <?php echo htmlentities($error);?></div>
-<?php } ?>
-
-
-</div>
-</div>
-
-
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="p-6">
-                                    <div class="">
-<form name="addpost" method="post" enctype="multipart/form-data">
- <div class="form-group m-b-20">
-<label for="exampleInputEmail1">Post Title</label>
-<input type="text" class="form-control" id="posttitle" name="posttitle" placeholder="Enter title" required>
-</div>
+        <!-- Top Bar Start -->
+        <?php include('includes/topheader.php');?>
+        <!-- ========== Left Sidebar Start ========== -->
+        <?php include('includes/leftsidebar.php');?>
+        <!-- Left Sidebar End -->
 
 
 
-<div class="form-group m-b-20">
-<label for="exampleInputEmail1">Category</label>
-<select class="form-control" name="category" id="category" onChange="getSubCat(this.value);" required>
-<option value="">Select Category </option>
-<?php
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container">
+
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-title-box">
+                                <h4 class="page-title">Add Post </h4>
+                                <ol class="breadcrumb p-0 m-0">
+                                    <li>
+                                        <a href="#">Post</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Add Post </a>
+                                    </li>
+                                    <li class="active">
+                                        Add Post
+                                    </li>
+                                </ol>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <!---Success Message--->
+                            <?php if($msg){ ?>
+                            <div class="alert alert-success" role="alert">
+                                <strong>Well done!</strong> <?php echo htmlentities($msg);?>
+                            </div>
+                            <?php } ?>
+
+                            <!---Error Message--->
+                            <?php if($error){ ?>
+                            <div class="alert alert-danger" role="alert">
+                                <strong>Oh snap!</strong> <?php echo htmlentities($error);?></div>
+                            <?php } ?>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="p-6">
+                                <div class="">
+                                    <form name="addpost" method="post" enctype="multipart/form-data">
+                                        <div class="form-group m-b-20">
+                                            <label for="exampleInputEmail1">Post Title</label>
+                                            <input type="text" class="form-control" id="posttitle" name="posttitle"
+                                                placeholder="Enter title" required>
+                                        </div>
+                                        <div class="form-group m-b-20">
+                                            <label for="des">Post description</label>
+                                            <input type="text" class="form-control" id="des" name="postdes"
+                                                placeholder="Enter Description" required>
+                                        </div>
+                                        <div class="form-group m-b-20">
+                                            <label for="key">Post keywords</label>
+                                            <input type="text" class="form-control" id="key" name="postkeywords"
+                                                placeholder="Enter keywords" required>
+                                        </div>
+                                        <div class="form-group m-b-20">
+                                            <label for="auth">Post Authors Name</label>
+                                            <input type="text" class="form-control" id="auth" name="postauthor"
+                                                placeholder="Enter Author Name" required>
+                                        </div>
+                                        <div class="form-group m-b-20">
+                                            <label for="authdes">Post Authors Descriptions</label>
+                                            <input type="text" class="form-control" id="authdes" name="postauthordes"
+                                                placeholder="Enter Author des" required>
+                                        </div>
+                                        <div class="form-group m-b-20">
+                                            <label for="tags">Post Tags Catagories</label>
+                                            <input type="text" class="form-control" id="tags" name="posttags"
+                                                placeholder="Enter Catagories Tags Keywords" required>
+                                        </div>
+                                        <div class="form-group m-b-20">
+                                            <label for="#tags">Post # Tags</label>
+                                            <input type="text" class="form-control" id="#tags" name="posthashtags"
+                                                placeholder="Enter posthash Tags Keywords" required>
+                                        </div>
+
+
+                                        <div class="form-group m-b-20">
+                                            <label for="exampleInputEmail1">Category</label>
+                                            <select class="form-control" name="category" id="category"
+                                                onChange="getSubCat(this.value);" required>
+                                                <option value="">Select Category </option>
+                                                <?php
 // Feching active categories
 $ret=mysqli_query($con,"select id,CategoryName from  tblcategory where Is_Active=1");
 while($result=mysqli_fetch_array($ret))
 {    
 ?>
-<option value="<?php echo htmlentities($result['id']);?>"><?php echo htmlentities($result['CategoryName']);?></option>
-<?php } ?>
+                                                <option value="<?php echo htmlentities($result['id']);?>">
+                                                    <?php echo htmlentities($result['CategoryName']);?></option>
+                                                <?php } ?>
 
-</select> 
-</div>
-    
-<div class="form-group m-b-20">
-<label for="exampleInputEmail1">Sub Category</label>
-<select class="form-control" name="subcategory" id="subcategory" required>
+                                            </select>
+                                        </div>
 
-</select> 
-</div>
-         
+                                        <div class="form-group m-b-20">
+                                            <label for="exampleInputEmail1">Sub Category</label>
+                                            <select class="form-control" name="subcategory" id="subcategory" required>
 
-<div class="row">
-<div class="col-sm-12">
- <div class="card-box">
-<h4 class="m-b-30 m-t-0 header-title"><b>Post Details</b></h4>
-<textarea id="example" name="postdescription" required></textarea>
-<script> 
-			var editor = new FroalaEditor('#example');
-		</script>
-</div>
-</div>
-</div>
+                                            </select>
+                                        </div>
 
 
-<div class="row">
-<div class="col-sm-12">
- <div class="card-box">
-<h4 class="m-b-30 m-t-0 header-title"><b>Feature Image</b></h4>
-<input type="file" class="form-control" id="postimage" name="postimage"  required>
-</div>
-</div>
-</div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="card-box">
+                                                    <h4 class="m-b-30 m-t-0 header-title"><b>Post Details</b></h4>
+                                                    <textarea id="example" name="postdescription" required></textarea>
+                                                    <script>
+                                                        var editor = new FroalaEditor('#example');
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
-<button type="submit" name="submit" class="btn btn-success waves-effect waves-light">Save and Post</button>
- <button type="button" class="btn btn-danger waves-effect waves-light">Discard</button>
-                                        </form>
-                                    </div>
-                                </div> <!-- end p-20 -->
-                            </div> <!-- end col -->
-                        </div>
-                        <!-- end row -->
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="card-box">
+                                                    <h4 class="m-b-30 m-t-0 header-title"><b>Blog Main Images Image</b>
+                                                    </h4>
+                                                    <input type="file" class="form-control" id="postimage"
+                                                        name="postimage" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <button type="submit" name="submit"
+                                            class="btn btn-success waves-effect waves-light">Save and Post</button>
+                                        <button type="button"
+                                            class="btn btn-danger waves-effect waves-light">Discard</button>
+                                    </form>
+                                </div>
+                            </div> <!-- end p-20 -->
+                        </div> <!-- end col -->
+                    </div>
+                    <!-- end row -->
 
 
 
-                    </div> <!-- container -->
+                </div> <!-- container -->
 
-                </div> <!-- content -->
+            </div> <!-- content -->
 
-           <?php include('includes/footer.php');?>
-
-            </div>
-
-
-            <!-- ============================================================== -->
-            <!-- End Right content here -->
-            <!-- ============================================================== -->
-
+            <?php include('includes/footer.php');?>
 
         </div>
-        <!-- END wrapper -->
+
+
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
 
 
 
-        <script>
-            var resizefunc = [];
-        </script>
+    <script>
+        var resizefunc = [];
+    </script>
 
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/detect.js"></script>
-        <script src="assets/js/fastclick.js"></script>
-        <script src="assets/js/jquery.blockUI.js"></script>
-        <script src="assets/js/waves.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-        <script src="assets/js/jquery.scrollTo.min.js"></script>
-        <script src="../plugins/switchery/switchery.min.js"></script>
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="../plugins/switchery/switchery.min.js"></script>
 
-        <!--Summernote js-->
-        <script src="../plugins/summernote/summernote.min.js"></script>
-        <!-- Select 2 -->
-        <script src="../plugins/select2/js/select2.min.js"></script>
-        <!-- Jquery filer js -->
-        <script src="../plugins/jquery.filer/js/jquery.filer.min.js"></script>
+    <!--Summernote js-->
+    <script src="../plugins/summernote/summernote.min.js"></script>
+    <!-- Select 2 -->
+    <script src="../plugins/select2/js/select2.min.js"></script>
+    <!-- Jquery filer js -->
+    <script src="../plugins/jquery.filer/js/jquery.filer.min.js"></script>
 
-        <!-- page specific js -->
-        <script src="assets/pages/jquery.blog-add.init.js"></script>
+    <!-- page specific js -->
+    <script src="assets/pages/jquery.blog-add.init.js"></script>
 
-        <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
-
-        <script>
-
-            jQuery(document).ready(function(){
-
-                $('.summernote').summernote({
-                    height: 240,                 // set editor height
-                    minHeight: null,             // set minimum height of editor
-                    maxHeight: null,             // set maximum height of editor
-                    focus: false                 // set focus to editable area after initializing summernote
-                });
-                // Select2
-                $(".select2").select2();
-
-                $(".select2-limiting").select2({
-                    maximumSelectionLength: 2
-                });
-            });
-        </script>
-  <script src="../plugins/switchery/switchery.min.js"></script>
-
-        <!--Summernote js-->
-        <script src="../plugins/summernote/summernote.min.js"></script>
-
-    
+    <!-- App js -->
+    <script src="assets/js/jquery.core.js"></script>
+    <script src="assets/js/jquery.app.js"></script>
 
 
-    </body>
+    <script src="../plugins/switchery/switchery.min.js"></script>
+
+
+
+
+</body>
+
 </html>
 <?php } ?>

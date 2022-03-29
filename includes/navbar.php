@@ -1,3 +1,16 @@
+<style>
+    .nav-link{
+        color:#fff
+    }
+    @media (min-width: 992px){
+.showbacktop.is-visible .logo-showbacktop img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    display: block;
+}}
+    </style>
 <div id="showbacktop" class="showbacktop full-nav bg-white border-lg-1 border-bottom shadow-b-sm border-none py-0">
     <div class="container">
         <nav id="main-menu" class="main-menu navbar navbar-expand-lg navbar-light px-2 px-lg-0 py-0">
@@ -5,10 +18,10 @@
             <div id="navbarTogglerDemo1" class="collapse navbar-collapse hover-mode">
                 <!-- logo in navbar -->
                 <div class="logo-showbacktop">
-                    <a href="index.php" class="navbar-brand custom-logo-link" rel="home" aria-current="page"><img width="452" height="95" src="./images/info.png" class="img-fluid" alt="logo-bootnews" srcset="
-                    ./images/info.png 452w,
-                    ./images/info.png 300w
-                    " sizes="(max-width: 452px) 100vw, 452px" /></a>
+                    <a href="index.php" class="navbar-brand custom-logo-link" rel="home" aria-current="page"><img width="350" height="95" src="./images/info.png" class="img-fluid" alt="getinfo4free" srcset="
+                    ./images/info.png 350w,
+                    ./images/info.png 250w
+                    " sizes="(max-width: 350px) 100vw, 452px" /></a>
                 </div>
 
                 <!--start main menu start-->
@@ -24,123 +37,36 @@
                                 <!--Block style 1-->
                                 <div class="row">
                                     <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The man who saved millions from starvation" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">The man who saved millions from starvation</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T14:10:06+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <?php 
+                                                    if (isset($_GET['pageno'])) {
+                                                            $pageno = $_GET['pageno'];
+                                                        } else {
+                                                            $pageno = 1;
+                                                        }
+                                                        $no_of_records_per_page = 4;
+                                                        $offset = ($pageno-1) * $no_of_records_per_page;
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The 1990s trends that keep coming back" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">The 1990s trends that keep coming back</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T13:01:29+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="If Only Her Voice Could Change the Way the Mets Play" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">If Only Her Voice Could Change the Way the
-                                                        Mets Play</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T05:57:33+00:00">June 13, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                                        $total_pages_sql = "SELECT COUNT(*) FROM tblposts";
+                                                        $result = mysqli_query($con,$total_pages_sql);
+                                                        $total_rows = mysqli_fetch_array($result)[0];
+                                                        $total_pages = ceil($total_rows / $no_of_records_per_page);
 
-                                    <!-- post start -->
+
+                                                $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.PostImage,tblposts.viewCounter,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 and tblposts.CategoryId=1 order by RAND() desc  LIMIT $offset, $no_of_records_per_page");
+                                                while ($row=mysqli_fetch_array($query)) {
+                                                ?>
                                     <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
                                         <div class="card card-full hover-a">
                                             <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="Ditch receipts and four other tips to be a green shopper" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
+                                                <a href="<?php echo htmlentities($row['url']);?>">
+                                                <img width="360" height="202" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" class=" img-fluid lazy wp-post-image" alt="<?php echo htmlentities($row['posttitle']);?>" title="<?php echo htmlentities($row['posttitle']);?>" loading="lazy" data-src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" srcset="
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 360w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 372w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 251w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 230w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 203w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?>  165w " sizes="(max-width: 360px) 100vw, 360px" />
                                                     <!-- post type -->
                                                     <div class="post-type-icon">
                                                         <span class="fa-stack-sea text-primary">
@@ -154,20 +80,29 @@
                                             <div class="card-body">
                                                 <!--title-->
                                                 <h2 class="card-title h5">
-                                                    <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">Ditch receipts and four other tips to be a
-                                                        green shopper</a>
+                                                    <a href="<?php echo htmlentities($row['url']);?>"><?php echo htmlentities($row['posttitle']);?></a>
                                                 </h2>
                                                 <div class="card-text text-muted small">
                                                     <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T02:47:06+00:00">June 13, 2019</time>
+                                                    <time class="news-date" datetime=" <?php echo htmlentities($row['postingdate']);?>"> <?php echo htmlentities($row['postingdate']);?></time>
                                                     <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
+                                                    <span title="<?php echo htmlentities($row['viewCounter']);?> View" class="float-end">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye me-1" viewBox="0 0 16 16">
+                                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                                                </path>
+                                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                                                </path>
+                                                            </svg>
+                                                            <?php echo htmlentities($row['viewCounter']);?>
+                                                        </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </article>
+                                    <?php } ?>
+                                    <!-- post start -->
+                                    
+
                                 </div>
                                 <div class="gap-0"></div>
                             </div>
@@ -180,123 +115,36 @@
                                 <!--Block style 1-->
                                 <div class="row">
                                     <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The man who saved millions from starvation" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">The man who saved millions from starvation</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T14:10:06+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <?php 
+                                                    if (isset($_GET['pageno'])) {
+                                                            $pageno = $_GET['pageno'];
+                                                        } else {
+                                                            $pageno = 1;
+                                                        }
+                                                        $no_of_records_per_page = 4;
+                                                        $offset = ($pageno-1) * $no_of_records_per_page;
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The 1990s trends that keep coming back" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">The 1990s trends that keep coming back</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T13:01:29+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="If Only Her Voice Could Change the Way the Mets Play" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">If Only Her Voice Could Change the Way the
-                                                        Mets Play</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T05:57:33+00:00">June 13, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                                        $total_pages_sql = "SELECT COUNT(*) FROM tblposts";
+                                                        $result = mysqli_query($con,$total_pages_sql);
+                                                        $total_rows = mysqli_fetch_array($result)[0];
+                                                        $total_pages = ceil($total_rows / $no_of_records_per_page);
 
-                                    <!-- post start -->
+
+                                                $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.PostImage,tblposts.viewCounter,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 and tblposts.CategoryId=2 order by RAND() desc  LIMIT $offset, $no_of_records_per_page");
+                                                while ($row=mysqli_fetch_array($query)) {
+                                                ?>
                                     <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
                                         <div class="card card-full hover-a">
                                             <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="Ditch receipts and four other tips to be a green shopper" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
+                                                <a href="<?php echo htmlentities($row['url']);?>">
+                                                <img width="360" height="202" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" class=" img-fluid lazy wp-post-image" alt="<?php echo htmlentities($row['posttitle']);?>" title="<?php echo htmlentities($row['posttitle']);?>" loading="lazy" data-src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" srcset="
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 360w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 372w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 251w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 230w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 203w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?>  165w " sizes="(max-width: 360px) 100vw, 360px" />
                                                     <!-- post type -->
                                                     <div class="post-type-icon">
                                                         <span class="fa-stack-sea text-primary">
@@ -310,20 +158,29 @@
                                             <div class="card-body">
                                                 <!--title-->
                                                 <h2 class="card-title h5">
-                                                    <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">Ditch receipts and four other tips to be a
-                                                        green shopper</a>
+                                                    <a href="<?php echo htmlentities($row['url']);?>"><?php echo htmlentities($row['posttitle']);?></a>
                                                 </h2>
                                                 <div class="card-text text-muted small">
                                                     <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T02:47:06+00:00">June 13, 2019</time>
+                                                    <time class="news-date" datetime=" <?php echo htmlentities($row['postingdate']);?>"> <?php echo htmlentities($row['postingdate']);?></time>
                                                     <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
+                                                    <span title="<?php echo htmlentities($row['viewCounter']);?> View" class="float-end">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye me-1" viewBox="0 0 16 16">
+                                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                                                </path>
+                                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                                                </path>
+                                                            </svg>
+                                                            <?php echo htmlentities($row['viewCounter']);?>
+                                                        </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </article>
+                                    <?php } ?>
+                                    <!-- post start -->
+                                    
+
                                 </div>
                                 <div class="gap-0"></div>
                             </div>
@@ -336,123 +193,36 @@
                                 <!--Block style 1-->
                                 <div class="row">
                                     <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The man who saved millions from starvation" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">The man who saved millions from starvation</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T14:10:06+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <?php 
+                                                    if (isset($_GET['pageno'])) {
+                                                            $pageno = $_GET['pageno'];
+                                                        } else {
+                                                            $pageno = 1;
+                                                        }
+                                                        $no_of_records_per_page = 4;
+                                                        $offset = ($pageno-1) * $no_of_records_per_page;
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The 1990s trends that keep coming back" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">The 1990s trends that keep coming back</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T13:01:29+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="If Only Her Voice Could Change the Way the Mets Play" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">If Only Her Voice Could Change the Way the
-                                                        Mets Play</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T05:57:33+00:00">June 13, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                                        $total_pages_sql = "SELECT COUNT(*) FROM tblposts";
+                                                        $result = mysqli_query($con,$total_pages_sql);
+                                                        $total_rows = mysqli_fetch_array($result)[0];
+                                                        $total_pages = ceil($total_rows / $no_of_records_per_page);
 
-                                    <!-- post start -->
+
+                                                $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.PostImage,tblposts.viewCounter,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 and tblposts.CategoryId=3 order by RAND() desc  LIMIT $offset, $no_of_records_per_page");
+                                                while ($row=mysqli_fetch_array($query)) {
+                                                ?>
                                     <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
                                         <div class="card card-full hover-a">
                                             <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="Ditch receipts and four other tips to be a green shopper" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
+                                                <a href="<?php echo htmlentities($row['url']);?>">
+                                                <img width="360" height="202" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" class=" img-fluid lazy wp-post-image" alt="<?php echo htmlentities($row['posttitle']);?>" title="<?php echo htmlentities($row['posttitle']);?>" loading="lazy" data-src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" srcset="
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 360w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 372w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 251w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 230w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 203w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?>  165w " sizes="(max-width: 360px) 100vw, 360px" />
                                                     <!-- post type -->
                                                     <div class="post-type-icon">
                                                         <span class="fa-stack-sea text-primary">
@@ -466,20 +236,29 @@
                                             <div class="card-body">
                                                 <!--title-->
                                                 <h2 class="card-title h5">
-                                                    <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">Ditch receipts and four other tips to be a
-                                                        green shopper</a>
+                                                    <a href="<?php echo htmlentities($row['url']);?>"><?php echo htmlentities($row['posttitle']);?></a>
                                                 </h2>
                                                 <div class="card-text text-muted small">
                                                     <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T02:47:06+00:00">June 13, 2019</time>
+                                                    <time class="news-date" datetime=" <?php echo htmlentities($row['postingdate']);?>"> <?php echo htmlentities($row['postingdate']);?></time>
                                                     <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
+                                                    <span title="<?php echo htmlentities($row['viewCounter']);?> View" class="float-end">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye me-1" viewBox="0 0 16 16">
+                                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                                                </path>
+                                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                                                </path>
+                                                            </svg>
+                                                            <?php echo htmlentities($row['viewCounter']);?>
+                                                        </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </article>
+                                    <?php } ?>
+                                    <!-- post start -->
+                                    
+
                                 </div>
                                 <div class="gap-0"></div>
                             </div>
@@ -492,123 +271,36 @@
                                 <!--Block style 1-->
                                 <div class="row">
                                     <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The man who saved millions from starvation" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">The man who saved millions from starvation</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T14:10:06+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <?php 
+                                                    if (isset($_GET['pageno'])) {
+                                                            $pageno = $_GET['pageno'];
+                                                        } else {
+                                                            $pageno = 1;
+                                                        }
+                                                        $no_of_records_per_page = 4;
+                                                        $offset = ($pageno-1) * $no_of_records_per_page;
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The 1990s trends that keep coming back" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">The 1990s trends that keep coming back</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T13:01:29+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="If Only Her Voice Could Change the Way the Mets Play" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">If Only Her Voice Could Change the Way the
-                                                        Mets Play</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T05:57:33+00:00">June 13, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                                        $total_pages_sql = "SELECT COUNT(*) FROM tblposts";
+                                                        $result = mysqli_query($con,$total_pages_sql);
+                                                        $total_rows = mysqli_fetch_array($result)[0];
+                                                        $total_pages = ceil($total_rows / $no_of_records_per_page);
 
-                                    <!-- post start -->
+
+                                                $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.PostImage,tblposts.viewCounter,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 and tblposts.CategoryId=4 order by RAND() desc  LIMIT $offset, $no_of_records_per_page");
+                                                while ($row=mysqli_fetch_array($query)) {
+                                                ?>
                                     <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
                                         <div class="card card-full hover-a">
                                             <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="Ditch receipts and four other tips to be a green shopper" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
+                                                <a href="<?php echo htmlentities($row['url']);?>">
+                                                <img width="360" height="202" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" class=" img-fluid lazy wp-post-image" alt="<?php echo htmlentities($row['posttitle']);?>" title="<?php echo htmlentities($row['posttitle']);?>" loading="lazy" data-src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" srcset="
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 360w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 372w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 251w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 230w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 203w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?>  165w " sizes="(max-width: 360px) 100vw, 360px" />
                                                     <!-- post type -->
                                                     <div class="post-type-icon">
                                                         <span class="fa-stack-sea text-primary">
@@ -622,20 +314,29 @@
                                             <div class="card-body">
                                                 <!--title-->
                                                 <h2 class="card-title h5">
-                                                    <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">Ditch receipts and four other tips to be a
-                                                        green shopper</a>
+                                                    <a href="<?php echo htmlentities($row['url']);?>"><?php echo htmlentities($row['posttitle']);?></a>
                                                 </h2>
                                                 <div class="card-text text-muted small">
                                                     <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T02:47:06+00:00">June 13, 2019</time>
+                                                    <time class="news-date" datetime=" <?php echo htmlentities($row['postingdate']);?>"> <?php echo htmlentities($row['postingdate']);?></time>
                                                     <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
+                                                    <span title="<?php echo htmlentities($row['viewCounter']);?> View" class="float-end">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye me-1" viewBox="0 0 16 16">
+                                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                                                </path>
+                                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                                                </path>
+                                                            </svg>
+                                                            <?php echo htmlentities($row['viewCounter']);?>
+                                                        </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </article>
+                                    <?php } ?>
+                                    <!-- post start -->
+                                    
+
                                 </div>
                                 <div class="gap-0"></div>
                             </div>
@@ -648,123 +349,36 @@
                                 <!--Block style 1-->
                                 <div class="row">
                                     <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The man who saved millions from starvation" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-999267-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-man-who-saved-millions-from-starvation/index.php">The man who saved millions from starvation</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T14:10:06+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <?php 
+                                                    if (isset($_GET['pageno'])) {
+                                                            $pageno = $_GET['pageno'];
+                                                        } else {
+                                                            $pageno = 1;
+                                                        }
+                                                        $no_of_records_per_page = 4;
+                                                        $offset = ($pageno-1) * $no_of_records_per_page;
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="The 1990s trends that keep coming back" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-731070-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/the-1990s-trends-that-keep-coming-back/index.php">The 1990s trends that keep coming back</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-16T13:01:29+00:00">June 16, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
 
-                                    <!-- post start -->
-                                    <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
-                                        <div class="card card-full hover-a">
-                                            <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="If Only Her Voice Could Change the Way the Mets Play" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-1448258-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
-                                                    <!-- post type -->
-                                                    <div class="post-type-icon">
-                                                        <span class="fa-stack-sea text-primary">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                                                            </svg>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-body">
-                                                <!--title-->
-                                                <h2 class="card-title h5">
-                                                    <a href="2019/06/if-only-her-voice-could-change-the-way-the-mets-play/index.php">If Only Her Voice Could Change the Way the
-                                                        Mets Play</a>
-                                                </h2>
-                                                <div class="card-text text-muted small">
-                                                    <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T05:57:33+00:00">June 13, 2019</time>
-                                                    <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                                        $total_pages_sql = "SELECT COUNT(*) FROM tblposts";
+                                                        $result = mysqli_query($con,$total_pages_sql);
+                                                        $total_rows = mysqli_fetch_array($result)[0];
+                                                        $total_pages = ceil($total_rows / $no_of_records_per_page);
 
-                                    <!-- post start -->
+
+                                                $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.PostImage,tblposts.viewCounter,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 and tblposts.CategoryId=5 order by RAND() desc  LIMIT $offset, $no_of_records_per_page");
+                                                while ($row=mysqli_fetch_array($query)) {
+                                                ?>
                                     <article class="col-12 col-sm-6 col-md-4 while-post mb-4 col-lg-3">
                                         <div class="card card-full hover-a">
                                             <div class="ratio_203-114 image-wrapper">
-                                                <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">
-                                                    <img width="360" height="231" src="wp-content/themes/bootnews/assets/img/assets/lazy-empty.png" class="img-fluid lazy wp-post-image" alt="Ditch receipts and four other tips to be a green shopper" loading="lazy" data-src="https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg" srcset="
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-360x231.jpg 360w,
-                                    https://demo.bootstrap.news/default/wp-content/uploads/2019/06/pexels-photo-434490-2-763x490.jpg 763w
-                                  " sizes="(max-width: 360px) 100vw, 360px" />
+                                                <a href="<?php echo htmlentities($row['url']);?>">
+                                                <img width="360" height="202" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" class=" img-fluid lazy wp-post-image" alt="<?php echo htmlentities($row['posttitle']);?>" title="<?php echo htmlentities($row['posttitle']);?>" loading="lazy" data-src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" srcset="
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 360w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 372w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 251w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 230w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?> 203w,
+                                                            admin/postimages/<?php echo htmlentities($row['PostImage']);?>  165w " sizes="(max-width: 360px) 100vw, 360px" />
                                                     <!-- post type -->
                                                     <div class="post-type-icon">
                                                         <span class="fa-stack-sea text-primary">
@@ -778,20 +392,29 @@
                                             <div class="card-body">
                                                 <!--title-->
                                                 <h2 class="card-title h5">
-                                                    <a href="2019/06/ditch-receipts-and-four-other-tips-to-be-a-green-shopper/index.php">Ditch receipts and four other tips to be a
-                                                        green shopper</a>
+                                                    <a href="<?php echo htmlentities($row['url']);?>"><?php echo htmlentities($row['posttitle']);?></a>
                                                 </h2>
                                                 <div class="card-text text-muted small">
                                                     <!--date-->
-                                                    <time class="news-date" datetime="2019-06-13T02:47:06+00:00">June 13, 2019</time>
+                                                    <time class="news-date" datetime=" <?php echo htmlentities($row['postingdate']);?>"> <?php echo htmlentities($row['postingdate']);?></time>
                                                     <!--comments-->
-                                                    <span title="0 Comment" class="float-end">
-                                                        <span class="icon-comments"></span> 0
-                                                    </span>
+                                                    <span title="<?php echo htmlentities($row['viewCounter']);?> View" class="float-end">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye me-1" viewBox="0 0 16 16">
+                                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                                                </path>
+                                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                                                </path>
+                                                            </svg>
+                                                            <?php echo htmlentities($row['viewCounter']);?>
+                                                        </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </article>
+                                    <?php } ?>
+                                    <!-- post start -->
+                                    
+
                                 </div>
                                 <div class="gap-0"></div>
                             </div>
@@ -802,38 +425,7 @@
                 </ul>
                 <!--end start main menu-->
 
-                <!--Search form-->
-                <div class="navbar-nav ms-auto d-none d-lg-block">
-                    <div class="search-box">
-                        <!--hide search-->
-                        <div class="search-menu no-shadow border-0 py-0">
-                            <form class="form-src form-inline" method="get" action="https://demo.bootstrap.news/default/" role="search">
-                                <div class="input-group">
-                                    <input name="s" class="form-control end-0" type="text" placeholder="Search &hellip;" value="" />
-                                    <span class="icones text-body">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="ms-n4" width="1.2rem" height="1.2rem" fill="currentColor" viewBox="0 0 512 512">
-                                            <path d="M221.09,64A157.09,157.09,0,1,0,378.18,221.09,157.1,157.1,0,0,0,221.09,64Z" style="
-                                fill: none;
-                                stroke: currentColor;
-                                stroke-miterlimit: 10;
-                                stroke-width: 32px;
-                              " />
-                                            <line x1="338.29" y1="338.29" x2="448" y2="448" style="
-                                fill: none;
-                                stroke: currentColor;
-                                stroke-linecap: round;
-                                stroke-miterlimit: 10;
-                                stroke-width: 32px;
-                              " />
-                            </svg>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
-                        <!--end hide search-->
-                    </div>
-                </div>
-                <!--end search form-->
+            
             </div>
             <!--End navbar menu-->
         </nav>
@@ -856,7 +448,7 @@
                 <div class="mobile-content mb-auto">
                     <!--logo-->
                     <div class="logo-sidenav p-2">
-                        <a href="index.php" class="navbar-brand custom-logo-link" rel="home" aria-current="page"><img width="452" height="95" src="./images/getinfo4free.png" class="img-fluid" alt="logo-bootnews" srcset="
+                        <a href="index.php" class="navbar-brand custom-logo-link" rel="home" aria-current="page"><img width="452" height="95" src="./images/getinfo4free.png" class="img-fluid" alt="getinfo4free" title="getinfo4free" srcset="
                         ./images/getinfo4free.png 452w,
                         ./images/getinfo4free.png 300w
                   " sizes="(max-width: 452px) 100vw, 452px" /></a>
@@ -867,30 +459,24 @@
                         <nav class="navbar navbar-inverse">
                             <ul id="side-menu" class="nav navbar-nav list-group list-unstyled side-link">
                                 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1517" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home active menu-item-1517 nav-item">
-                                    <a title="Home" href="https://demo.bootstrap.news/default" class="nav-link">Home</a>
+                                    <a title="Home" href="index.php" class="nav-link">Home</a>
                                 </li>
                               
                                 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1516" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1516 nav-item">
-                                    <a title="Business" href="category/business/index.php" class="nav-link">Business</a>
+                                    <a title="Business" href="Education-and-technical-blogs.php" class="nav-link">Educations and technical</a>
                                 </li>
-                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1514" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown mega-dropdown menu-item-1514 nav-item">
-                                    <a title="Lifestyle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1514">Lifestyle</a>
-                                    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1514" role="menu">
-                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1504" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1504 nav-item">
-                                            <a title="Fashion" href="category/lifestyle/fashion/index.php" class="dropdown-item">Fashion</a>
-                                        </li>
-                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1503" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown mega-dropdown menu-item-1503 nav-item">
-                                            <a title="Travel" href="#" class="dropdown-item dropdown-toggle" id="menu-item-dropdown-1503">Travel</a>
-                                            <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1503" role="menu">
-                                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1506" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1506 nav-item">
-                                                    <a title="Adventure" href="category/lifestyle/adventure/index.php" class="dropdown-item">Adventure</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                   
-                                    </ul>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1516" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1516 nav-item">
+                                    <a title="Business" href="Health-and-food-blogs.php" class="nav-link">Health and Food</a>
                                 </li>
-                             
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1516" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1516 nav-item">
+                                    <a title="Business" href="Gadgets-and-reviews-blogs.php" class="nav-link">Gedgets and Reviews</a>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1516" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1516 nav-item">
+                                    <a title="Business" href="How-to-and-troubleshoot-blogs.php" class="nav-link">How to and troubleshoot</a>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1516" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1516 nav-item">
+                                    <a title="Business" href="Travel-and-entertainment-blogs.php" class="nav-link">Travel and Entertainment</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -898,7 +484,7 @@
 
                 <!-- copyright mobile sidebar menu -->
                 <div class="mobile-copyright mt-5 text-center">
-                    <p>Copyright BootNews - All rights reserved.</p>
+                    <p>Copyright Getinfo4free - All rights reserved.</p>
                 </div>
             </nav>
         </div>

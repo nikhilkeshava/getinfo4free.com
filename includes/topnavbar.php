@@ -26,7 +26,7 @@
                   >
                     <a
                       title="Contact Us"
-                      href="contact-us/php"
+                      href="contact-us.php"
                       class="nav-link"
                       >Contact Us</a
                     >

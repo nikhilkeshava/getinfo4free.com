@@ -30,7 +30,7 @@ echo "<script>alert('Something went wrong. Please try again.');</script>";
 <html lang="en">
     <head>
 
-        <title>Newsportal | Add Subadmin</title>
+        <title>Getinfo4free | Add Subadmin</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />

@@ -12,7 +12,9 @@ if(isset($_POST['submit']))
 $catid=intval($_GET['cid']);
 $category=$_POST['category'];
 $description=$_POST['description'];
-$query=mysqli_query($con,"Update  tblcategory set CategoryName='$category',Description='$description' where id='$catid'");
+$arr = explode(" ",$category);
+$url=implode("-",$arr);
+$query=mysqli_query($con,"Update  tblcategory set CategoryName='$category',catslug='$url',Description='$description' where id='$catid'");
 if($query)
 {
 $msg="Category Updated successfully ";
@@ -30,7 +32,7 @@ $error="Something went wrong . Please try again.";
 <html lang="en">
     <head>
 
-        <title>Newsportal | Add Category</title>
+        <title>Getinfo4free | Add Category</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />

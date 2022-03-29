@@ -12,8 +12,10 @@ if(isset($_POST['submit']))
 {
 $category=$_POST['category'];
 $description=$_POST['description'];
+$arr = explode(" ",$category);
+$url=implode("-",$arr);
 $status=1;
-$query=mysqli_query($con,"insert into tblcategory(CategoryName,Description,Is_Active) values('$category','$description','$status')");
+$query=mysqli_query($con,"insert into tblcategory(CategoryName,catslug,Description,Is_Active) values('$category','$url','$description','$status')");
 if($query)
 {
 $msg="Category created ";
@@ -31,7 +33,7 @@ $error="Something went wrong . Please try again.";
 <html lang="en">
     <head>
 
-        <title>Newsportal | Add Category</title>
+        <title>Getinfo4free | Add Category</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />

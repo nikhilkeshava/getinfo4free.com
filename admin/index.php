@@ -31,7 +31,7 @@ echo "<script>alert('Invalid Details');</script>";
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="getinfo4free.">
-        <meta name="author" content="PHPGurukul">
+        <meta name="author" content="getinfo4free">
 
 
         <!-- App title -->

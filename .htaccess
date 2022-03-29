@@ -1,0 +1,8 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /getinfo4free.com/
+
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+RewriteRule ^(.*)$ blogDetails.php?id=$1 [QSA,L]
+
