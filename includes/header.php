@@ -155,7 +155,7 @@
                 <img
                   class="mobile-logo img-fluid d-lg-none mx-auto"
                   alt="mobile logo"
-                  src="./images/getinfo4free.png"
+                  src="./images/getinfo4free.webp"
                 />
               </a>
 
@@ -407,12 +407,12 @@
                     ><img
                       width="452"
                       height="95"
-                      src="./images/getinfo4free.png"
+                      src="./images/getinfo4free.webp"
                       class="img-fluid"
                       alt="logo-bootnews"
                       srcset="
-                      ./images/getinfo4free.png 452w,
-                      ./images/getinfo4free.png 300w
+                      ./images/getinfo4free.webp 452w,
+                      ./images/getinfo4free.webp 300w
                       "
                       sizes="(max-width: 452px) 100vw, 452px"
                   /></a>

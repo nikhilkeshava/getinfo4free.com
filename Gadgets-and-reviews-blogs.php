@@ -40,10 +40,10 @@ include('includes/config.php');
     <meta name="apple-mobile-web-app-title" content="" />
 
     <!-- exttraklink -->
-    <link rel="icon" href="./images/getinfo4free.png" sizes="32x32" />
-    <link rel="icon" href="./images/getinfo4free.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./images/getinfo4free.png" />
-    <meta name="msapplication-TileImage" content="./images/getinfo4free.png" />
+    <link rel="icon" href="./images/getinfo4free.webp" sizes="32x32" />
+    <link rel="icon" href="./images/getinfo4free.webp" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./images/getinfo4free.webp" />
+    <meta name="msapplication-TileImage" content="./images/getinfo4free.webp" />
     <!-- extra link -->
 </head>
 

@@ -274,7 +274,7 @@
                 >
                   <a
                     title="Privacy Policy"
-                    href="privacy-policy.php"
+                    href="Privacy-Policy.php"
                     class="nav-link"
                     >Privacy Policy</a
                   >

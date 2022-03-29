@@ -18,9 +18,9 @@
             <div id="navbarTogglerDemo1" class="collapse navbar-collapse hover-mode">
                 <!-- logo in navbar -->
                 <div class="logo-showbacktop">
-                    <a href="index.php" class="navbar-brand custom-logo-link" rel="home" aria-current="page"><img width="350" height="95" src="./images/info.png" class="img-fluid" alt="getinfo4free" srcset="
-                    ./images/info.png 350w,
-                    ./images/info.png 250w
+                    <a href="index.php" class="navbar-brand custom-logo-link" rel="home" aria-current="page"><img width="350" height="95" src="./images/info.webp" class="img-fluid" alt="getinfo4free" srcset="
+                    ./images/info.webp 350w,
+                    ./images/info.webp 250w
                     " sizes="(max-width: 350px) 100vw, 452px" /></a>
                 </div>
 
@@ -448,9 +448,9 @@
                 <div class="mobile-content mb-auto">
                     <!--logo-->
                     <div class="logo-sidenav p-2">
-                        <a href="index.php" class="navbar-brand custom-logo-link" rel="home" aria-current="page"><img width="452" height="95" src="./images/getinfo4free.png" class="img-fluid" alt="getinfo4free" title="getinfo4free" srcset="
-                        ./images/getinfo4free.png 452w,
-                        ./images/getinfo4free.png 300w
+                        <a href="index.php" class="navbar-brand custom-logo-link" rel="home" aria-current="page"><img width="452" height="95" src="./images/getinfo4free.webp" class="img-fluid" alt="getinfo4free" title="getinfo4free" srcset="
+                        ./images/getinfo4free.webp 452w,
+                        ./images/getinfo4free.webp 300w
                   " sizes="(max-width: 452px) 100vw, 452px" /></a>
                     </div>
 

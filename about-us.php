@@ -38,10 +38,10 @@ include('includes/config.php');
     <meta name="apple-mobile-web-app-title" content="About US - getinfo4free blogs" />
 
     <!-- exttraklink -->
-    <link rel="icon" href="./images/getinfo4free.png" sizes="32x32" />
-    <link rel="icon" href="./images/getinfo4free.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./images/getinfo4free.png" />
-    <meta name="msapplication-TileImage" content="./images/getinfo4free.png" />
+    <link rel="icon" href="./images/getinfo4free.webp" sizes="32x32" />
+    <link rel="icon" href="./images/getinfo4free.webp" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./images/getinfo4free.webp" />
+    <meta name="msapplication-TileImage" content="./images/getinfo4free.webp" />
     <!-- extra link -->
 </head>
 
@@ -91,7 +91,7 @@ include('includes/config.php');
 
                             <div class="entry-content post-content post-page">
 
-                                <figure id="attachment_1129" aria-describedby="caption-attachment-1129" style="width: 300px" class="wp-caption alignleft"><img loading="lazy" class="size-medium wp-image-1129" src="./images/getinfo4free.png" alt="About getinfo4free" width="300" height="200" srcset="./images/getinfo4free.png 300w, ./images/getinfo4free.png 750w, ./images/getinfo4free.png 1024w, ./images/getinfo4free.png 1140w" sizes="(max-width: 300px) 100vw, 300px">
+                                <figure id="attachment_1129" aria-describedby="caption-attachment-1129" style="width: 300px" class="wp-caption alignleft"><img loading="lazy" class="size-medium wp-image-1129" src="./images/getinfo4free.webp" alt="About getinfo4free" width="300" height="200" srcset="./images/getinfo4free.webp 300w, ./images/getinfo4free.webp 750w, ./images/getinfo4free.webp 1024w, ./images/getinfo4free.webp 1140w" sizes="(max-width: 300px) 100vw, 300px">
                                     <figcaption id="caption-attachment-1129" class="wp-caption-text">About Getinfo4free</figcaption>
                                 </figure>
                                 <p>We are a solid company and always prioritize consumer convenience. We have a great mission to continue to innovate and develop in everything. If you are looking for a solid company, we are the answer you are looking for. We were established since 2019 and have served many domestic and foreign consumers.</p>
