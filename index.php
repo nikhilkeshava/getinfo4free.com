@@ -12,13 +12,13 @@ include('includes/config.php');
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <title>getinfo4free - Read all type of blogs </title>
-    <meta name="description" content="getinfo4free is the blogs website where get all information like health and food , technical blogs , travel blogs so on" />
+    <meta name="description" content="getinfo4free.com is a one-stop shop for knowledge and information gathered by knowledgeable team members using the most cutting-edge technology available." />
     <link rel=" canonical" href="https://www.getinfo4free.com" />
     <meta name="keywords" content="getinfo4free , technical blogs , top blog website , getinfo4free.com" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="getinfo4free - Read all type of blogs" />
-    <meta property="og:description" content="getinfo4free is the blogs website where get all information like health and food , technical blogs , travel blogs so on" />
+    <meta property="og:description" content="getinfo4free.com is a one-stop shop for knowledge and information gathered by knowledgeable team members using the most cutting-edge technology available." />
     <meta property="og:url" content="https://www.getinfo4free.com" />
     <meta property="og:site_name" content="getinfo4free" />
     <meta name="twitter:card" content="summary_large_image" />

@@ -61,7 +61,7 @@ endif;
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- extra lunk -->
-    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-title" content="Contact US - getinfo4free" />
 
     <!-- exttraklink -->
     <link rel="icon" href="./images/getinfo4free.webp" sizes="32x32" />

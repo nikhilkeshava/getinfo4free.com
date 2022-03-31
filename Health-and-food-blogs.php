@@ -13,17 +13,17 @@ include('includes/config.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <title>getinfo4free - catagories </title>
-    <meta name="description" content="" />
-    <link rel="canonical" href="" />
-    <meta name="keywords" content="" />
+    <title>Health and Food Related Blogs  </title>
+    <meta name="description" content="Health and Food Related Blogs informations and knowledge finds in this page where it is gathered by knowledgeable team members in getinfo4free." />
+    <link rel="canonical" href="https://www.getinfo4free.com/Health-and-food-blogs.php" />
+    <meta name="keywords" content="Health related Blogs , Food Related Blogs , Health and Food Related Blogs , health blogs" />
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Health and Food Related Blogs" />
+    <meta property="og:description" content="Health and Food Related Blogs informations and knowledge finds in this page where it is gathered by knowledgeable team members in getinfo4free." />
+    <meta property="og:url" content="https://www.getinfo4free.com/Health-and-food-blogs.php" />
+    <meta property="og:site_name" content="blogs" />
     <meta name="twitter:card" content="summary_large_image" />
     <!-- extarlink -->
     <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
@@ -37,7 +37,7 @@ include('includes/config.php');
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- extra lunk -->
-    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-title" content="Health and Food Related Blogs  " />
 
     <!-- exttraklink -->
     <link rel="icon" href="./images/getinfo4free.webp" sizes="32x32" />

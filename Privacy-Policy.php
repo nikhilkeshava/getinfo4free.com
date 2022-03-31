@@ -16,7 +16,7 @@ include('includes/config.php');
     <link rel=" canonical" href="https://www.getinfo4free.com/Privacy-Policy.php" />
     <meta name="keywords" content="getinfo4free Privacy Policy, technical blogs , top blog website , getinfo4free.com" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="blog" />
     <meta property="og:title" content="getinfo4free - privacy Policy " />
     <meta property="og:description" content="Privacy Policy of getinfo4free where getinfo4free is the blogs website where get all information" />
     <meta property="og:url" content="https://www.getinfo4free.com/Privacy-Policy.php" />
