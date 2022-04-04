@@ -310,7 +310,7 @@ while ($row=mysqli_fetch_array($query)) {
 
                             <div class="entry-content post-content">
                                 <figure class="image-single-wrapper">
-                                    <img width="750" height="500" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" class="img-fluid lazy wp-post-image" alt="<?php echo htmlentities($row['posttitle']);?>" loading="lazy" data-src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" srcset="
+                                    <img width="750" height="500" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" class="img-fluid" alt="<?php echo htmlentities($row['posttitle']);?>" data-src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" srcset="
                         admin/postimages/<?php echo htmlentities($row['PostImage']);?> 1024w,
                        admin/postimages/<?php echo htmlentities($row['PostImage']);?> 300w,
                         admin/postimages/<?php echo htmlentities($row['PostImage']);?> 750w,
@@ -412,7 +412,7 @@ $pt=$row['postdetails'];
                                             $total_pages = ceil($total_rows / $no_of_records_per_page);
 
 
-                                            $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.PostImage,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 and tblposts.CategoryId=3 order by RAND() LIMIT $offset, $no_of_records_per_page");
+                                            $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.postdes as postdes,tblposts.authorname as authorname,tblposts.PostImage,tblcategory.CategoryName as category,tblcategory.id as cid,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 order by RAND() LIMIT $offset, $no_of_records_per_page");
                                             while ($row=mysqli_fetch_array($query)) {
                                             ?>
                             <div class="card card-full u-hover hover-a mb-2">
@@ -737,10 +737,23 @@ while ($row=mysqli_fetch_array($query)) {
             <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"></path>
         </svg>
     </a>
+    <script>
+        
+        var demo=document.querySelectorAll('.entry-content img'),i;
+        // console.log(demo);
+        for (i = 1; i < demo.length; ++i) {
+            demo[i].setAttribute("class", "img-fluid lazy wp-post-image entered loaded");
+            demo[i].setAttribute("width", "400");
+            demo[i].setAttribute("height", "400");
+            demo[i].setAttribute("loading", "lazy");
+            demo[i].setAttribute("sizes", "(max-width: 750px) 100vw, 750px");
+    }
+        
+    </script>
 
 
     <script async src="js/bundle.min.js" id="bootnews-scripts-js"></script>
-    <script async src="./js/embed.min.js" id="wp-embed-js"></script>
+    <script async src="js/embed.min.js" id="wp-embed-js"></script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
 
 </body>

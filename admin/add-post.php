@@ -81,11 +81,9 @@ $error="Something went wrong . Please try again.";
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
     <script src="assets/js/modernizr.min.js"></script>
-    <link href='https://cdn.jsdelivr.net/npm/froala-editor@4.0.8/css/froala_editor.pkgd.min.css' rel='stylesheet'
-        type='text/css' />
+    
+    <script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
 
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@4.0.8/js/froala_editor.pkgd.min.js'>
-    </script>
     <script>
         function getSubCat(val) {
             $.ajax({
@@ -238,8 +236,8 @@ while($result=mysqli_fetch_array($ret))
                                                     <h4 class="m-b-30 m-t-0 header-title"><b>Post Details</b></h4>
                                                     <textarea id="example" name="postdescription" required></textarea>
                                                     <script>
-                                                        var editor = new FroalaEditor('#example');
-                                                    </script>
+                                                     CKEDITOR.replace( 'example' );
+                                                </script>
                                                 </div>
                                             </div>
                                         </div>

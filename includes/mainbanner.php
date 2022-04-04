@@ -91,10 +91,10 @@
                                                 <!--category-->
                                                 <?php
 
-$ip = $row['cattags']; // some IP address
-$iparr = explode (",", $ip); 
-$dataarr=explode (",", $data); 
-?>
+                                                    $ip = $row['cattags']; // some IP address
+                                                    $iparr = explode (",", $ip); 
+                                                    // $dataarr=explode (",", $data); 
+                                                    ?>
                                                 <a href="category/lifestyle/adventure/index.php" class="p-1 badge bg-primary text-white"><?php echo htmlentities($iparr[0]);?></a>
                                                 <a href="category/lifestyle/travel/index.php" class="p-1 badge bg-primary text-white"><?php echo htmlentities($iparr[1]);?></a>
                                                 <!-- post title -->
