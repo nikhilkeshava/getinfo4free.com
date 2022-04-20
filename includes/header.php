@@ -257,11 +257,15 @@
                       >Contact Us</a
                     >
                   </li>
+                 
                 </ul>
-                <!--end top start menu-->
-
+               
                 <!--Top right menu-->
                 <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item">
+                <div id="google_translate_element"></div>
+            
+                  </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"

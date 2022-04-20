@@ -2,6 +2,16 @@
     .nav-link{
         color:#fff
     }
+    .goog-te-gadget-simple {
+    font-size: 8pt !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    zoom: 1;
+}
+#google_translate_element {
+margin:5px;
+}
+
     @media (min-width: 992px){
 .showbacktop.is-visible .logo-showbacktop img {
     max-width: 50px;
@@ -477,6 +487,7 @@
                                 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1516" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1516 nav-item">
                                     <a title="Business" href="Travel-and-entertainment-blogs.php" class="nav-link">Travel and Entertainment</a>
                                 </li>
+                              
                             </ul>
                         </nav>
                     </div>
@@ -484,6 +495,7 @@
 
                 <!-- copyright mobile sidebar menu -->
                 <div class="mobile-copyright mt-5 text-center">
+               
                     <p>Copyright Getinfo4free - All rights reserved.</p>
                 </div>
             </nav>
